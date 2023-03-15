@@ -16,6 +16,8 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
+ifneq ($(TARGET_BUILD_2W), true)
 PRODUCT_PACKAGES := \
     DancingScript-Regular.ttf \
     DancingScript-Bold.ttf
+endif
